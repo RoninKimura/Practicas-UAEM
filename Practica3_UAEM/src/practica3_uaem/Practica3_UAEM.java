@@ -1,4 +1,5 @@
 package practica3_uaem;
+import java.awt. *;
 import javax.swing. *;
 
 /**
@@ -12,6 +13,7 @@ public class Practica3_UAEM extends JFrame{
     JPasswordField psw_contrasenia;
     JTextArea txt_area;
     JScrollPane scroll_pane;
+//    JScrollBar scroll_bar;
     //Botones de la ventana
     JButton btn_nuevo,btn_agregar;
     
@@ -51,6 +53,11 @@ public class Practica3_UAEM extends JFrame{
         psw_contrasenia=new JPasswordField();
         psw_contrasenia.setBounds(110, 196, 100, 20);
         txt_area=new JTextArea(50,50);
+        txt_area.setBounds(230, 75, 150, 145);
+        
+//        scroll_bar= new JScrollBar(JScrollBar.VERTICAL);
+//        scroll_bar.setBounds(230,75,150,145);
+        
         /*Agregamos txt_area al scroll e indicamos que siempre se veran los 
         scroll tanto el vetical como el horizontal*/
         scroll_pane=new JScrollPane(txt_area,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
@@ -72,6 +79,8 @@ public class Practica3_UAEM extends JFrame{
         add(lbl_contrasenia);
         add(psw_contrasenia);
         add(lbl_info);
+//        add(scroll_bar);
+//        scroll_bar.add(txt_area);
         add(scroll_pane);
         add(btn_nuevo);
         add(btn_agregar);
